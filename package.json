@@ -1,0 +1,35 @@
+{
+  "name": "nodezoo-suggest",
+  "version": "1.0.0-tms-dev",
+  "description": "nodezoo-suggest",
+  "main": "suggest.js",
+  "keywords": [
+    "nodezoo",
+    "seneca",
+    "suggest",
+    "microservice"
+  ],
+  "scripts": {
+    "test": "lab -P test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodezoo/nodezoo-suggest.git"
+  },
+  "author": "Richard Rodger (http://richardrodger.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodezoo/nodezoo-suggest/issues"
+  },
+  "homepage": "https://github.com/nodezoo/nodezoo-suggest",
+  "dependencies": {
+    "seneca": "3.3.0",
+    "seneca-redis-transport": "0.3.0",
+    "seneca-repl": "1.0.0",
+    "trie-prefix-tree": "^1.3.0"
+  },
+  "devDependencies": {
+    "code": "4.0.0",
+    "lab": "13.0.1"
+  }
+}
