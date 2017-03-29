@@ -9,7 +9,7 @@ Seneca({tag: 'suggest'})
 
   .use('..')
 
-  .use('seneca-repl', {port:10050})
+  .use('seneca-repl', {port:10060})
 
-  .listen(9050)
+  .listen(9060)
 
