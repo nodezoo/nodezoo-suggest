@@ -16,12 +16,12 @@ module.exports = function suggest (options) {
 
 
   function cmd_add (msg, reply) {
-    trie.addWord(msg.query)
+    trie.addWord(''+msg.query)
     reply()
   }
 
 
   function cmd_suggest( msg, reply ) {
-    reply(trie.getPrefix(msg.query))
+    reply(trie.getPrefix(''+msg.query))
   }
 }
