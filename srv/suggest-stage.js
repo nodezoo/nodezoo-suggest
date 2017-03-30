@@ -1,15 +1,12 @@
 /* Copyright (c) 2017 Richard Rodger and other contributors, MIT License */
 
+var PORT = process.env.PORT || 9000
 
 var Seneca = require('seneca')
 
-
 Seneca({tag: 'suggest'})
-  .test('print')
+  .listen(PORT)
 
   .use('../suggest.js')
 
-  .use('seneca-repl', {port:10060})
-
-  .listen(9060)
 
