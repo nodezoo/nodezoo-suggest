@@ -1,0 +1,9 @@
+
+FROM nodezoo-suggest:1
+
+CMD ["node", "/app/srv/suggest-prod.js"]
+
+
+
+
+

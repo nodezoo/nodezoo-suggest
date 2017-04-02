@@ -22,6 +22,7 @@ module.exports = function suggest (options) {
 
 
   function cmd_suggest( msg, reply ) {
-    reply(trie.getPrefix(''+msg.query))
+    var q = ''+msg.query
+    reply('' === q ? [] : (trie.getPrefix(q) || []))
   }
 }
