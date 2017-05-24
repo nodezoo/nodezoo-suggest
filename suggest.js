@@ -16,6 +16,7 @@ module.exports = function suggest (options) {
 
 
   function cmd_add (msg, reply) {
+    //console.log(msg.meta$)
     trie.addWord(''+msg.query)
     reply()
   }
