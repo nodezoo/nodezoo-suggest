@@ -24,12 +24,12 @@
   "homepage": "https://github.com/nodezoo/nodezoo-suggest",
   "dependencies": {
     "seneca-redis-transport": "0.3.0",
-    "seneca-repl": "1.0.0",
-    "seneca": "../seneca",
-    "seneca-balance-client": "../seneca-balance-client",
+    "seneca-repl": "1.1.2",
+    "seneca": "3.4.1",
+    "seneca-balance-client": "0.6.1",
     "seneca-monitor": "../seneca-monitor",
-    "seneca-mesh": "../seneca-mesh",
-    "seneca-entity": "2.0.0",
+    "seneca-mesh": "0.10.0",
+    "seneca-entity": "2.0.2",
     "trie-prefix-tree": "1.3.0"
   },
   "devDependencies": {

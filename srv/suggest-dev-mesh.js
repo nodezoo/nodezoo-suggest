@@ -5,8 +5,7 @@ var Seneca = require('seneca')
 
 
 Seneca({tag: 'suggest'})
-  .test()
-
+  .test('print')
   .use('monitor')
 
   .use('mesh', {
