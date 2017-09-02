@@ -23,13 +23,15 @@
   },
   "homepage": "https://github.com/nodezoo/nodezoo-suggest",
   "dependencies": {
-    "seneca-redis-transport": "0.3.0",
-    "seneca-repl": "1.1.2",
     "seneca": "3.4.2",
     "seneca-balance-client": "0.6.1",
-    "seneca-monitor": "0.1.0",
-    "seneca-mesh": "0.11.0",
     "seneca-entity": "2.0.2",
+    "seneca-mesh": "0.11.0",
+    "seneca-monitor": "0.1.0",
+    "seneca-redis-transport": "0.3.0",
+    "seneca-repl": "1.1.2",
+    "seneca-statsd": "^0.1.0",
+    "seneca-zipkin-tracer": "^0.2.0",
     "trie-prefix-tree": "1.3.0"
   },
   "devDependencies": {
