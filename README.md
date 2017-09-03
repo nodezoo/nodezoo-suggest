@@ -2,9 +2,8 @@
 
 This is a repository in the microservice demonstration system for
 the [Tao of Microservices](//bit.ly/rmtaomicro) book (chapter 9). This
-code is live at [nodezoo.com](http://nodezoo.com).
-
-To get started, visit the [nodezoo/tao](/nodezoo/tao) repository.
+code is live at [nodezoo.com](http://nodezoo.com). To get started,
+visit the [nodezoo/tao](//github.com/nodezoo/tao) repository.
 
 __This microservice provides the search suggestion functionality.__
 
