@@ -33,6 +33,9 @@ possibly `Sent`.
 |`role:suggest,cmd:add (AO)` |Add query to suggestions |
 |`role:suggest,cmd:add (SC)` |Provide a list of suggestions |
 
+<small>
+KEY: A: asynchronous, S: synchronous, O: observed, C: consumed.
+</small>
 
 ## Running from the terminal
 
