@@ -24,22 +24,21 @@ below.
 
 ## Message flows
 
-This microservice acts on the `Accepted` message patterns, performing
-appropriate business `Actions`, as a result of which, new messages are
-possibly `Sent`.
+The table shows how this microservice acts on the `Accepted` message
+patterns and performs appropriate business `Actions`, as a result of
+which, new messages are possibly `Sent`.
 
 |Accepted |Actions |Sent
 |--|--|--
 |`role:suggest,cmd:add (AO)` |Add query to suggestions |
 |`role:suggest,cmd:add (SC)` |Provide a list of suggestions |
 
-<small>
-KEY: A: asynchronous, S: synchronous, O: observed, C: consumed.
-</small>
+(KEY: A: asynchronous, S: synchronous, O: observed, C: consumed)
+
 
 ## Running from the terminal
 
-This microserive is written in [node.js](//nodejs.org), which you
+This microservice is written in [node.js](//nodejs.org), which you
 will need to download and install. Fork and checkout this repository,
 and then run `npm` inside the repository folder to install its dependencies:
 
