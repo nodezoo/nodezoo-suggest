@@ -8,6 +8,7 @@ To get started, visit the [nodezoo/tao](/nodezoo/tao) repository.
 
 __This microservice provides the search suggestion functionality.__
 
+
 ## Running
 
 To run this microservice normally, use the tooling describing in
@@ -16,6 +17,23 @@ the entire system of microservices (of which this is only one of many) in
 production ([Kubernetes](//kubernetes.io)), staging
 ([Docker](//docker.com)), and development
 ([fuge](//github.com/apparatus/fuge)) modes.
+
+To run from the terminal for testing and debugging, see
+the [Running from the terminal](#running-from-the-terminal) section
+below.
+
+
+## Message flows
+
+
+|Accepted |Action |Sent
+|--|--|--
+|`role:suggest,cmd:add (AO)`
+|Add query to suggestions
+|NONE
+
+
+## Running from the terminal
 
 This microserive is written in [node.js](//nodejs.org), which you
 will need to download and install. Fork and checkout this repository,
@@ -26,7 +44,7 @@ $ npm install
 ```
 
 To run this microservice separately, for development, debug, or
-testing purposes, use the service scripts in the [`srv`](tree/master/srv) folder:
+testing purposes, use the service scripts in the [`srv`](srv) folder:
 
 * [`suggest-dev.js`](srv/suggest-dev.js) : run the development configuration 
   with hard-coded network ports.
@@ -38,6 +56,11 @@ testing purposes, use the service scripts in the [`srv`](tree/master/srv) folder
   This script listens for messages on port 9060 and provides a REPL on
   port 10060 (try `$ telnet localhost 10060`).
 
+  A [seneca-mesh](//github.com/senecajs/seneca-mesh) version, for
+  testing purposes, is also shown in the
+  script [`suggest-dev-mesh.js`](srv/suggest-dev-mesh.js). For more on
+  this, see the [nodezoo-repl](//github.com/nodezoo/nodezoo-repl)
+  repository.
 
 * [`suggest-stage.js`](srv/suggest-stage.js) : run the staging
   configuration. This configuration is intended to run in a Docker
@@ -47,6 +70,18 @@ testing purposes, use the service scripts in the [`srv`](tree/master/srv) folder
   ```sh
   $ node srv/suggest-stage.js [PORT]
   ```
+
+* [`suggest-prod.js`](srv/suggest-prod.js) : run the production
+  configuration. This configuration is intended to run under
+  Kubernetes in a [seneca-mesh](//github.com/senecajs/seneca-mesh)
+  network. If running in a terminal (only do this for testing), you'll
+  need to provide the mesh base nodes in the `BASES` environment
+  variable.
+
+  ```sh
+  $ BASES=x.x.x.x:port node srv/suggest-prod.js
+  ```
+
 
 
   
