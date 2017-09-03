@@ -25,12 +25,14 @@ below.
 
 ## Message flows
 
+This microservice acts on the `Accepted` message patterns, performing
+appropriate business `Actions`, as a result of which, new messages are
+possibly `Sent`.
 
-|Accepted |Action |Sent
+|Accepted |Actions |Sent
 |--|--|--
-|`role:suggest,cmd:add (AO)`
-|Add query to suggestions
-|NONE
+|`role:suggest,cmd:add (AO)` |Add query to suggestions |
+|`role:suggest,cmd:add (SC)` |Provide a list of suggestions |
 
 
 ## Running from the terminal
