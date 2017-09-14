@@ -35,6 +35,22 @@ which, new messages are possibly `Sent`.
 
 (KEY: A: asynchronous, S: synchronous, O: observed, C: consumed)
 
+### Service interactions
+
+![suggest](nodezoo-suggest.png?raw=true "suggest")
+
+
+## Testing
+
+Unit tests are in the [test](test) folder. To run, use:
+
+```sh
+$ npm run test
+```
+
+Note that this is a learning system, and the tests are not intended to
+be high coverage.
+
 
 ## Running from the terminal
 

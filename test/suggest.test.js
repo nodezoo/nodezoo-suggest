@@ -11,20 +11,30 @@ var expect = Code.expect
 
 
 describe('suggest', function () {
-
+  
   it('query', function (done) {
     var q = 'q'+((''+Math.random()).substring(2))
+    var q1 = q.substring(0,2)
+    var q2 = q.substring(0,3)
 
     Seneca()
       .test(done)
       .use('..')
       .gate()
-      .act('role:suggest,cmd:add,query:'+q)
-      .act('role:suggest,cmd:suggest,query:'+q.substring(0,q.length/2),
+
+      .act('role:suggest,cmd:add,query:'+q1)
+      .act('role:suggest,cmd:suggest,query:'+q1.substring(0,1),
            function (ignore, out) {
-             expect(out[0]).to.equal(q)
-             done()
+             expect(out).to.equal([q1])
            })
+
+      .act('role:suggest,cmd:add,query:'+q2)
+      .act('role:suggest,cmd:suggest,query:'+q1.substring(0,1),
+           function (ignore, out) {
+             expect(out).to.equal([q1, q2])
+           })
+
+      .ready(done)
   })
 })
 
