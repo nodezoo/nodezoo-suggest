@@ -37,7 +37,7 @@ which, new messages are possibly `Sent`.
 
 ### Service interactions
 
-![suggest](nodezoo-suggest.png?raw=true "suggest")
+![suggest](suggest.png?raw=true "suggest")
 
 
 ## Testing
