@@ -45,7 +45,7 @@ which, new messages are possibly `Sent`.
 Unit tests are in the [test](test) folder. To run, use:
 
 ```sh
-$ npm run test
+$ npm test
 ```
 
 Note that this is a learning system, and the tests are not intended to
