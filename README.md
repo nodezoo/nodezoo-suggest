@@ -1,5 +1,7 @@
 # nodezoo-suggest
 
+[![Build Status](https://travis-ci.org/nodezoo/nodezoo-suggest.svg?branch=master)](https://travis-ci.org/nodezoo/nodezoo-suggest)
+
 This is a repository in the microservice demonstration system for
 the [Tao of Microservices](//bit.ly/rmtaomicro) book (chapter 9). This
 code is live at [nodezoo.com](http://nodezoo.com). To get started,
